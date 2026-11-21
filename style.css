@@ -41,7 +41,7 @@ h1{
     border-bottom: 1px dotted #3b2a20;
     padding-bottom: 4px;
 }
-/* スライドショーの枠 */
+
 .slideshow {
     position: relative;     
     width: 100%;
@@ -50,7 +50,7 @@ h1{
     background-color: black; 
 }
 
-/* 写真の設定 */
+
 .slideshow img {
     width: 100%;
     height: 100%;
@@ -64,7 +64,7 @@ h1{
     opacity: 0;
 }
 
-/* 写真の上に乗せる文字の設定 */
+
 .hero-text {
     position: absolute;      
     top: 50%;                
@@ -122,3 +122,35 @@ footer p {
     margin-top: 20px;
     opacity: 0.8;        /* 少しだけ透かして控えめにする */
 }
+
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #76533D;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+}
+
