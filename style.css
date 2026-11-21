@@ -1,4 +1,124 @@
+body{
+    font-family: "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
+    background-color: antiquewhite;
+    text-align: center;
+    color: #3b2a20;
+    font-weight: bold;
+}
 p {
     font-size: 20px;
-    color: yellow;
+}
+h1{
+    font-size: 18px;
+}
+.hours-time{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hours {
+    margin-top: 0;
+}
+.hours-box {
+    border: 2px solid #3b2a20;
+    padding: 2px;
+    width: 200px;
+    margin: 15px auto 0;
+}
+.menu{
+    font-size: 18px;
+}
+
+.menu-list {
+    width: 220px;        
+    margin: 20px auto;
+    padding-left: 0;
+    list-style: none;
+}
+.menu-list li {
+    display: flex;                
+    justify-content: space-between; 
+    margin-bottom: 8px;            
+    border-bottom: 1px dotted #3b2a20;
+    padding-bottom: 4px;
+}
+/* スライドショーの枠 */
+.slideshow {
+    position: relative;     
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-color: black; 
+}
+
+/* 写真の設定 */
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    filter: blur(2px);  
+    opacity: 0.7;            
+    transition: opacity 0.5s ease; 
+}
+
+.slideshow img.fade-out {
+    opacity: 0;
+}
+
+/* 写真の上に乗せる文字の設定 */
+.hero-text {
+    position: absolute;      
+    top: 50%;                
+    left: 50%;               
+    transform: translate(-50%, -50%); 
+    color: white;            
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); 
+    width: 90%;            
+}
+
+.hero-text h1 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-weight: bold;
+    color: white;           
+    font-size: 24px;
+}
+
+/*リンクの変更*/
+a {
+    color: #4a6b53;           
+    font-weight: bold;        
+    text-decoration: none;   
+    border-bottom: 1px solid #4a6b53; 
+    padding-bottom: 2px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+section { 
+    margin: 50px auto; 
+}
+
+
+footer {
+    background-color: #3b2a20; 
+    color: #f7efe5;            
+    padding: 40px 20px;        
+    margin-top: 60px;          
+}
+
+footer p {
+    color: #f7efe5;
+    margin: 5px 0;
+}
+
+.copyright {
+    font-size: 18px;
+    margin-top: 20px;
+    opacity: 0.8;        /* 少しだけ透かして控えめにする */
 }
